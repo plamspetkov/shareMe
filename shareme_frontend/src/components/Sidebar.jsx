@@ -74,7 +74,7 @@ const Sidebar = ({ user, closeToggle }) => {
 							key={category.name}
 						>
 							<img
-								src={category.image}
+								src={category?.image}
 								alt="category-image"
 								className="w-8 h-8 rounded-full shadow-sm"
 							/>
@@ -90,7 +90,7 @@ const Sidebar = ({ user, closeToggle }) => {
 					onClick={handleCloseSidebar}
 				>
 					<img
-						src={user.image}
+						src={user?.image}
 						className="w-10 h-10 rounded-full"
 						alt="user-profile"
 					/>
