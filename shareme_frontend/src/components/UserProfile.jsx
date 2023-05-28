@@ -80,7 +80,7 @@ const UserProfile = () => {
 							{user.userName}
 						</h1>
 						<div className="absolute top-0 z-1 right-0 p-2">
-							{userId === user._id && (
+							{userId === user?._id && (
 								<GoogleOAuthProvider
 									clientId={import.meta.env.VITE_GOOGLE_LOGIN_API_TOKEN}
 								>
