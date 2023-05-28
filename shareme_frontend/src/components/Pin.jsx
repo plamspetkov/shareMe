@@ -15,7 +15,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
 	const user = fetchUser();
 
 	// eslint-disable-next-line no-unsafe-optional-chaining
-	const alreadySaved = !!save?.filter((item) => item.postedBy._id === user.sub)
+	const alreadySaved = !!save?.filter((item) => item.postedBy._id === user?.sub)
 		?.length;
 
 	console.log(alreadySaved);
